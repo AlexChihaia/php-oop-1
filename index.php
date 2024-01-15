@@ -2,9 +2,13 @@
 // importazione della classe movie
 require_once './movie.php';
 
-//istanza degli oggetti appartenenti alla classe movie
-$movie1 = new Movie("Inception", 2010, "Action/Sci-Fi");
-$movie2 = new Movie("The Shawshank Redemption", 1994, "Drama");
+//istanza degli oggetti appartenenti alla classe movie con un genre
+//$movie1 = new Movie("Inception", 2010, "Action/Sci-Fi");
+//$movie2 = new Movie("The Shawshank Redemption", 1994, "Drama");
+
+//istanza degli oggetti appartenenti alla classe movie con due genre
+$movie1 = new Movie("Inception", 2010, ["Action", "Sci-Fi"]);
+$movie2 = new Movie("The Shawshank Redemption", 1994, ["Drama"]);
 ?>
 
 <!DOCTYPE html>

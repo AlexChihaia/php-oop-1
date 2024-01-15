@@ -17,6 +17,10 @@ class Movie
     //metodo
     public function getMovieInfo()
     {
-        return "Title: " . $this->title . ", Year: " . $this->year . ", Genre: " . $this->genre;
+        // metodo che accetta un genre
+        //  return "Title: " . $this->title . ", Year: " . $this->year . ", Genre: " . $this->genre;
+
+        // metodo che accetta due genre
+        return "Title: " . $this->title . ", Year: " . $this->year . ", Genre: " . implode(", ", $this->genre);
     }
 }
