@@ -23,9 +23,9 @@ $movie2 = new Movie("The Shawshank Redemption", 1994, ["Drama"]);
 <div class="container">
     <!-- stampa a schermo  -->
     <?php
-    echo '<P>' . $movie1->getMovieInfo() . '</P>';
+    echo '<P>' . $movie1->get_movie_info() . '</P>';
     echo '<hr/>';
-    echo '<P>' . $movie2->getMovieInfo() . '</P>';
+    echo '<P>' . $movie2->get_movie_info() . '</P>';
     ?>
 </div>
 
